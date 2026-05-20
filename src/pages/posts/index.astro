@@ -1,7 +1,9 @@
 ---
-import Layout from "../../layouts/Layout.astro";
+import Layout from "../../layouts/Layouts.astro";
 
-const posts = await Astro.glob("./*.md");
+const posts = Object.values(
+  import.meta.glob("./*.md", { eager: true })
+);
 ---
 
 <Layout title="posts">
