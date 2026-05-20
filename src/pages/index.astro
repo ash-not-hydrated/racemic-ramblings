@@ -1,240 +1,67 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
 ---
 
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>itinerae : i am sleepy</title>
-<link rel="shortcut icon" href="https://files.catbox.moe/xp563g.gif"> 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
-<style>
-body {
-    background: #fefcf9;
-    color: #68625a;
-    text-shadow:0px 0px 0px #bbb;
-    font-family: 'Crimson Text', Verdana, Arial;
-    font-size: 13px;
-    line-height: 1.4;
-    letter-spacing: 1px;
-    margin: 0;
-    text-align: justify;
-}
-
-a {
-    color: #333;
-    text-decoration: none;
-}
-
-a:hover {
-    background: #ddd;
-}
-
-body::-webkit-scrollbar {
-    width: 6px;
-}
-body::-webkit-scrollbar-track {
-    background: #f8f8f8;
-}
-body::-webkit-scrollbar-thumb {
-    background-color: #666;
-    border-radius: 3px;
-}
-
-#container {
-    max-width: 660px;
-    margin: 20px auto;
-    padding: 0 10px;
-}
-
-header {
-    text-align: center;
-    padding: 16px 8px;
-}
-header img {
-    max-width: 100%;
-    height: auto;
-    filter: grayscale(100%);
-}
-.site-name {
-    margin-top: 10px;
-    font: 28px 'Homemade apple';
-    letter-spacing: 3px;
-    color:  #927a72;
-}
-.slogan {
-    font:italic 12px Georgia, Arial;
-    margin-top: 5px;
-    color:#999;
-}
-
-nav {
-    text-align: center;
-    padding: 6px 4px;
-    margin-bottom: 10px;
-}
-nav a {
-    text-transform: lowercase;
-    letter-spacing: 2px;
-    background: #fff;
-    display: inline-flex;
-    align-items: center;
-    padding: 4px 6px;
-    margin-right: 4px;
-    font:italic 12px georgia, arial;
-    color:#333;
-    border-radius:5px;
-}
-nav a img {
-    vertical-align: middle;
-    margin-right: 4px;
-}
-
-#content {
-    display: flex;
-    gap: 10px;
-    border-top: 1px dotted #999;
-    padding-top: 10px;
-}
-
-.sidebar {
-    width: 150px;
-    padding: 4px; 
-}
-
-.sidebar > div {
-    margin-bottom: 8px;
-}
-
-.title {
-    font: 16px 'UnifrakturCook';
-    margin-bottom: 4px;
-    color:#b9a588;
-}
-
-.divider {
-    height: 0;
-    border-bottom: 1px dotted #999;
-    margin: 6px 0;
-}
-
-main {
-    flex: 1;
-    padding: 8px;
-    border-left: 1px dotted #999;
-    border-right: 1px dotted #999;
-}
-
-.main-title {
-    color:#777;
-    font: 20px 'UnifrakturCook';
-    text-transform: lowercase;
-    margin: 0 0 6px;
-    letter-spacing: 2px;
-    line-height: 18px;
-}
-
-footer {
-    border-top: 1px dotted #999;
-    text-align: center;
-    padding: 22px 8px;
-    font-size: 12px;
-}
-
-@media(max-width: 600px){
-    #content {
-        flex-direction: column;
-        gap: 12px;
-    }
-    .sidebar {
-        width: auto;
-        padding: 4px;
-    }
-    main {
-        border-left: none;
-        border-right: none;
-        padding: 8px;
-    }
-    nav {
-        font-size: 10px;
-        padding: 6px 4px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    nav a {
-        margin: 4px 0;
-        width: 100%;
-        justify-content: center;
-    }
-}
-</style>
-</head>
-
-
-<body>
-    
-    
-<div id="container">
-<header>
-    <img src="https://files.catbox.moe/21ka8f.png" alt="sleepy fox" width="250">
-    <div class="site-name"><img src="https://files.catbox.moe/xp563g.gif" alt="x"> site name <img src="https://files.catbox.moe/xp563g.gif" alt="x"></div>
-    <div class="slogan">a slogan or something.</div>
-</header>
-
-<nav>
-    <a href="#"> home.</a>
-    <a href="#"> link here.</a>
-    <a href="#"> link here.</a>
-    <a href="#"> link here.</a>
-</nav>
+<Layout title="racemic ramblings">
 
 <div id="content">
-<aside class="sidebar">
-    <div class="title">title here</div>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros convallis.
-    <div class="divider"></div>
-    <div class="title">currently..</div>
-    <b>date</b> 09/02/2026 <br>
-    <b>time</b> 03:10 P.M.<br>
-    <b>listening</b> nothing<br>
-    <b>reading</b> nothing<br>
-    <b>watching</b> something
-    <div class="divider"></div>
-    <div class="title">title here</div>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros convallis.
-    <br><br>
-</aside>
 
-<main>
-    <div class="main-title">Lorem ipsum</div>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros convallis, tincidunt arcu ut, sollicitudin odio. Nullam dapibus ex enim, id posuere mi tristique in. Donec rutrum sit amet purus in tristique. Fusce mattis erat ac lacus ultricies, tincidunt luctus sapien aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis a lacinia massa.
-    <div class="divider"></div>
-    <div class="main-title">Lorem ipsum</div>
-    Etiam malesuada dictum euismod. Sed eu velit turpis. Morbi in faucibus ante, vestibulum consectetur lorem. Aliquam arcu neque, feugiat sed cursus sed, venenatis sit amet orci. Nunc ut metus nisl. Vivamus sagittis congue turpis eu rutrum. Mauris ipsum augue, tristique et velit non, consequat egestas risus. Pellentesque venenatis ultricies rhoncus.
-</main>
+    <aside class="sidebar">
 
-<aside class="sidebar">
-    <div class="title">elsewhere</div>
-    <a href="#"> ko-fi.</a><br>
-    <a href="#"> bluesky.</a><br>
-    <a href="#"> tumblr.</a>
-    <div class="divider"></div>
-    <div class="title">title here</div>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros convallis, tincidunt arcu ut, sollicitudin odio.
-    <div class="divider"></div>
-    <div class="title">title here</div>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros convallis.
-</aside>
+        <div class="title">about</div>
+
+        cant these atoms just bond amongst themselves?
+        why do they have to ramble on about it?
+
+        <div class="divider"></div>
+
+        <div class="title">currently..</div>
+
+        <b>listening</b> nothing<br />
+        <b>reading</b> nothing<br />
+        <b>watching</b> something
+
+    </aside>
+
+    <main>
+
+        <div class="main-title">
+            posts
+        </div>
+
+        welcome to the world of no selectivity.
+        my racemic thoughts are going to be archived here.
+
+        <div class="divider"></div>
+
+        <div class="main-title">
+            latest post
+        </div>
+
+        <a href="/posts/first-post">
+            → first post
+        </a>
+
+    </main>
+
+    <aside class="sidebar">
+
+        <div class="title">elsewhere</div>
+
+        <a href="https://github.com/ash-not-hydrated">
+            github.
+        </a><br />
+
+        <a href="#">
+            bluesky.
+        </a><br />
+
+        <a href="#">
+            tumblr.
+        </a>
+
+    </aside>
+
 </div>
 
-<!-- Do not remove the credits if you use this free layout! thank you. -->
-
-<footer>
-Layout made by <a href="https://itinerae.org" target="_blank">Itinerae</a>. Image from <a href="https://www.tumblr.com/intoxicated/" target="_blank">tumblr</a>. 
-</footer>
-</div>
-</body>
-</html>
+</Layout>

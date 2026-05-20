@@ -1,0 +1,71 @@
+---
+import "../styles/global.css";
+
+const { title = "racemic ramblings" } = Astro.props;
+---
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>{title}</title>
+
+    <link
+        rel="shortcut icon"
+        href="https://files.catbox.moe/xp563g.gif"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet"
+    />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap"
+        rel="stylesheet"
+    />
+</head>
+
+<body>
+    <div id="container">
+
+        <header>
+            <img
+                src="https://files.catbox.moe/21ka8f.png"
+                alt="sleepy fox"
+                width="250"
+            />
+
+            <div class="site-name">
+                <img src="https://files.catbox.moe/xp563g.gif" alt="x" />
+                racemic ramblings
+                <img src="https://files.catbox.moe/xp563g.gif" alt="x" />
+            </div>
+
+            <div class="slogan">
+                chemically impure thoughts
+            </div>
+        </header>
+
+        <nav>
+            <a href="/">home.</a>
+            <a href="/posts">posts.</a>
+            <a href="/about">about.</a>
+            <a href="/links">links.</a>
+        </nav>
+
+        <slot />
+
+        <footer>
+            Layout made by
+            <a href="https://itinerae.org" target="_blank">Itinerae</a>.
+            Image from
+            <a href="https://www.tumblr.com/intoxicated/" target="_blank">
+                tumblr
+            </a>.
+        </footer>
+
+    </div>
+</body>
+</html>
