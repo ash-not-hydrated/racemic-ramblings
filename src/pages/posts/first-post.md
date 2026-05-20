@@ -9,6 +9,6 @@ hey.
 
 this dumpster fire is finally uhhh on fire?
 
-## astro is actually nice
+## some heading ig
 
 dont extinguish it haha.

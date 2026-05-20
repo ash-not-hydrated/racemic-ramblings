@@ -1,0 +1,48 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+const posts = await Astro.glob("./*.md");
+---
+
+<Layout title="posts">
+
+<div id="content">
+
+    <aside class="sidebar">
+
+        <div class="title">archive</div>
+
+        all ramblings,
+        chemically pure or otherwise.
+
+    </aside>
+
+    <main>
+
+        <div class="main-title">
+            posts
+        </div>
+
+        <ul>
+            {posts.map((post) => (
+                <li>
+                    <a href={post.url}>
+                        → {post.frontmatter.title}
+                    </a>
+                </li>
+            ))}
+        </ul>
+
+    </main>
+
+    <aside class="sidebar">
+
+        <div class="title">navigation</div>
+
+        <a href="/">home.</a>
+
+    </aside>
+
+</div>
+
+</Layout>
