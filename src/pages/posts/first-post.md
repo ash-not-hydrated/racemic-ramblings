@@ -5,11 +5,10 @@ title: "first post"
 
 # first post
 
-hello world.
+hey.
 
-this website is finally alive.
+this dumpster fire is finally uhhh on fire?
 
 ## astro is actually nice
 
-i thought static site generators would be annoying,
-but this is surprisingly clean.
+dont extinguish it haha.
